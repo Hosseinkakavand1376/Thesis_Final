@@ -111,55 +111,6 @@ This strategy ensures that train and test pixels never share horizontal or verti
 
 ---
 
-## How to Compile the Thesis
-
-### Requirements
-
-- MiKTeX or TeX Live with packages: `toptesi`, `beamer`, `booktabs`, `hyperref`, `graphicx`
-- Python 3.x with: `matplotlib`, `scipy`, `numpy`, `scikit-learn`, `pandas`
-
-### Compile LaTeX
-
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-### Regenerate Figures
-
-```bash
-python generate_figures.py     # Phase 1 figures
-python generate_figures2.py    # Phase 2 + comparison figures
-```
-
-### Compile Presentation
-
-```bash
-cd Presentation/
-pdflatex presentation.tex
-```
-
----
-
-## Citation
-
-If you use ideas or code from this thesis, please cite:
-
-```bibtex
-@mastersthesis{kakavand2026wavelength,
-  author    = {Kakavand, Hossein},
-  title     = {Wavelength Selection for Machine Learning and Deep Learning Models in Leaf Classification},
-  school    = {Politecnico di Torino},
-  year      = {2026},
-  month     = {July},
-  type      = {MSc Thesis},
-  note      = {Supervisors: Prof. Renato Ferrero, PhD Nicola Dilillo}
-}
-```
-
----
 
 ## Acknowledgements
 
@@ -168,9 +119,3 @@ This work builds upon the CCARS framework introduced by:
 - Dilillo et al. (2023). *Competitive Calibration Adaptive Reweighted Sampling for Hyperspectral Data.*
 - Dilillo et al. (2025). *Enhancing CCARS for Non-Linear Classification.*
 
----
-
-## License
-
-The LaTeX source and Python scripts in this repository are made available for academic use.  
-The thesis document itself is © 2026 Hossein Kakavand, Politecnico di Torino.
